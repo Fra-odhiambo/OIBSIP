@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>Temperature Converter</h1>
+    <p class="subtitle">Convert between Celsius, Fahrenheit and Kelvin</p>
+
+    <label for="tempInput">Temperature value</label>
+    <input type="text" id="tempInput" placeholder="Enter a number, e.g. 25" autocomplete="off">
+
+    <label for="unitSelect">Convert from</label>
+    <select id="unitSelect">
+      <option value="C">Celsius (°C)</option>
+      <option value="F">Fahrenheit (°F)</option>
+      <option value="K">Kelvin (K)</option>
+    </select>
+
+    <button id="convertBtn">Convert</button>
+
+    <p id="error" class="error"></p>
+
+    <div id="results" class="results hidden">
+      <div class="result-box">
+        <span class="unit">Celsius</span>
+        <span id="resC" class="value"></span>
+      </div>
+      <div class="result-box">
+        <span class="unit">Fahrenheit</span>
+        <span id="resF" class="value"></span>
+      </div>
+      <div class="result-box">
+        <span class="unit">Kelvin</span>
+        <span id="resK" class="value"></span>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
