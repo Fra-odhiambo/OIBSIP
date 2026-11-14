@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navy: #1b263b;
+  --blue: #3a86ff;
+  --light: #eef2f7;
+  --text: #2b2b2b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 40px;
+  background: var(--navy);
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 18px;
+}
+
+.navbar nav a:hover {
+  color: var(--blue);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 85vh;
+  padding: 40px 20px;
+  color: #fff;
+  background: var(--navy);
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.role {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  color: #cbd5e1;
+}
+
+.btn {
+  background: var(--blue);
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+.section {
+  padding: 70px 40px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: var(--navy);
+  margin-bottom: 30px;
+}
+
+.alt {
+  background: var(--light);
+}
+
+.about-text {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill {
+  background: var(--navy);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.card a,
+.social a {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+#contact p {
+  margin: 6px 0;
+}
+
+.footer {
+  background: var(--navy);
+  color: #fff;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    flex-direction: column;
+    padding: 12px 20px;
+  }
+  .navbar nav a {
+    margin: 0 8px;
+    font-size: 0.9rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .section {
+    padding: 50px 20px;
+  }
+}
